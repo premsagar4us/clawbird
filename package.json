@@ -1,0 +1,78 @@
+{
+  "name": "clawbird",
+  "version": "1.0.0",
+  "description": "AI-native browser automation engine for OpenClaw and AI agents - Job automation, price monitoring, trading bots, web scraping",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "test:actions": "node test-actions.js",
+    "test:complete": "node test-complete.js",
+    "test:phase3": "node test-phase3.js",
+    "test:all": "npm test && npm run test:actions && npm run test:complete && npm run test:phase3",
+    "dev": "node index.js",
+    "workflow": "node workflows/workflow-runner.js",
+    "workflow:price": "node workflows/price-monitor.js",
+    "workflow:news": "node workflows/news-aggregator.js",
+    "workflow:screenshots": "node workflows/screenshot-documenter.js",
+    "workflow:forms": "node workflows/form-filler.js",
+    "lint": "eslint *.js workflows/*.js || true"
+  },
+  "keywords": [
+    "browser-automation",
+    "ai-agent",
+    "openclaw",
+    "playwright",
+    "chrome-devtools",
+    "cdp",
+    "web-scraping",
+    "job-automation",
+    "price-monitoring",
+    "trading-bot",
+    "form-filler",
+    "screenshot-automation",
+    "ai-assistant",
+    "llm-tool",
+    "langchain",
+    "puppeteer-alternative",
+    "selenium-alternative",
+    "web-testing",
+    "e2e-testing",
+    "headless-browser",
+    "browser-driver",
+    "automation-framework",
+    "rpa",
+    "robotic-process-automation",
+    "ai-native",
+    "agentic-ai",
+    "browser-control",
+    "web-automation",
+    "testing-framework",
+    "chromium",
+    "playwright-core"
+  ],
+  "author": "Premsagar <premsagar4us@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/premsagar4us/clawbird.git"
+  },
+  "bugs": {
+    "url": "https://github.com/premsagar4us/clawbird/issues"
+  },
+  "homepage": "https://github.com/premsagar4us/clawbird#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chrome-remote-interface": "^0.33.2",
+    "playwright-core": "^1.58.2"
+  },
+  "devDependencies": {},
+  "files": [
+    "*.js",
+    "workflows/*.js",
+    "README.md",
+    "LICENSE",
+    "config-example.json"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "browser": {
+    "enabled": true,
+    "defaultProfile": "custom",
+    "profiles": {
+      "custom": {
+        "driver": "custom",
+        "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        "cdpPort": 19000,
+        "userDataDir": "~/.openclaw/browser/custom",
+        "color": "#00FF00",
+        "customFlags": [
+          "--disable-blink-features=AutomationControlled",
+          "--disable-web-security"
+        ]
+      },
+      "custom-brave": {
+        "driver": "custom",
+        "executablePath": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+        "cdpPort": 19001,
+        "userDataDir": "~/.openclaw/browser/custom-brave",
+        "color": "#FF6600"
+      },
+      "custom-remote": {
+        "driver": "custom",
+        "cdpUrl": "http://10.0.0.42:9222",
+        "color": "#0066CC"
+      }
+    }
+  }
+}
